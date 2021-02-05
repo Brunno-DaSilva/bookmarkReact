@@ -2,8 +2,8 @@ class App extends React.Component {
   state = {
     bookmarks: [],
     formData: {
-      title: "GitHub Profile",
-      url: "https://github.com/Brunno-DaSilva",
+      title: "",
+      url: "",
     },
     updateData: {
       title: "",
@@ -13,14 +13,14 @@ class App extends React.Component {
   };
 
   componentDidMount() {
+    this.getData();
+  }
+
+  getData = () => {
     fetch("/bookmarks")
       .then((response) => response.json())
-      .then((bookmarks) => {
-        this.setState({
-          bookmarks: bookmarks,
-        });
-      });
-  }
+      .then((bookmarks) => this.setState({ bookmarks: bookmarks }));
+  };
 
   handleChange = (event) => {
     const newData = { ...this.state.formData };
