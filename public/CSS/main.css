@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Slab:700|Open+Sans&display=swap");
+
+:root {
+  --mauve: #4d0328;
+  --dusty_blue: #6d7993;
+  --overcast: #9099a2;
+  --paper: #d5d5d5;
+  --light-yellow-bg: #a391b9;
+  --dark-blue: #4d5375;
+  --yankees-blue: #f6f4f2;
+  --sea-serpent: #ebe3e3;
+  --aquamarine: #6080a3;
+  --react: #c8b9d8;
+  --yellow-light: #fbe8b3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--light-yellow-bg);
+  width: 100vw;
+  padding-top: 0;
+  color: var(--overcast);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h1 {
+  font-weight: bold;
+  font-size: 4em;
+  margin: 10px;
+}
+
+/*============================
+==>       Header  
+============================*/
+
+header {
+  width: 100%;
+  height: 5vh;
+  max-height: 40vh;
+}
+
+.nav-bar {
+  border-bottom: 2px solid var(--yellow-light);
+}
+
+.nav-bar ul {
+  background-color: var(--dark-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  min-width: 100vw;
+  height: 8vh;
+  z-index: 11;
+}
+.nav-bar ul li {
+  list-style: none;
+}
+
+.nav-bar ul li a img {
+  width: 30px;
+  height: auto;
+}
+
+.nav-bar ul li a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  z-index: 11;
+}
+.nav-bar ul li a:hover {
+  color: var(--react);
+}
+
+.header-ld {
+  height: 20% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin-top: 5%;
+  height: 100%;
+  min-height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+h1,
+p {
+  color: var(--sea-serpent);
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  color: var(--aquamarine);
+  font-weight: bold;
+}
+
+h2 {
+  color: var(--yankees-blue);
+  margin-bottom: 10%;
+  font-size: 5.1rem;
+  font-weight: 600;
+  letter-spacing: 15px;
+}
+
+.bookmark-container {
+  background-color: var(--aquamarine);
+  width: 90vw;
+  min-height: 50vh;
+  min-height: 70%;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+.main-title {
+  padding: 20px;
+  text-align: center;
+}
+.main-title h1 {
+  font-size: 4rem;
+  color: var(--yankees-blue);
+}
+
+/*=======================
+==>     Table
+=======================*/
+.table-container {
+  background-color: var(--yankees-blue);
+  width: 85%;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 20px;
+}
+
+table {
+  font-family: "Montserrat", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+  color: var(--dark-blue);
+}
+
+i,
+.danger {
+  color: #f17272;
+  text-align: right;
+}
+
+td,
+td a {
+  text-decoration: none;
+  text-align: left;
+  padding: 20px;
+  color: var(--aquamarine);
+}
+td a:hover {
+  color: #c9970f;
+  cursor: pointer;
+}
+
+td i:hover {
+  cursor: pointer;
+  color: #c9970f;
+}
+
+#edit {
+  /* margin-left: 3rem; */
+}
+
+tr :nth-child(3) {
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+tr:hover {
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+tr:nth-child(even) {
+  background-color: #c0cad43a;
+}
+
+.bookmark-wrapper form input[type="text"] {
+  color: #a0a0a0;
+}
+
+/*=======================
+==>         FORM
+==========================*/
+/*/////////////////////
+//       Form 
+////////////////////*/
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  background-color: var(--sea-serpent);
+  border: none;
+  color: var(--dark-blue);
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+label {
+  color: var(--sea-serpent);
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+form {
+  width: 900px;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#edit-form {
+  width: 600px;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#edit-form input[type="submit"] {
+  background-color: var(--yellow-light);
+  border: none;
+  color: var(--dark-blue);
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  width: 40% !important;
+  border: none;
+  border-radius: 10px;
+  color: var(--yellow-light);
+  background-color: none;
+  background: none;
+  border-bottom: 1px solid var(--yellow-light);
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  padding-left: 1.8rem;
+  border-radius: 10px;
+}
+
+input[type="text"]:nth-child(2) {
+  margin: 0 20px;
+}
+
+#edit-form input[type="text"] {
+  width: 40% !important;
+  border: none;
+  border-radius: 10px;
+  color: var(--dusty_blue);
+  background-color: white;
+  border-bottom: 1px solid var(--yellow-light);
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  padding-left: 1.8rem;
+}
+
+#edit-form ::placeholder {
+  font-family: "Courier Prime", monospace;
+  color: var(--aquamarine);
+  font-size: 1.1rem;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+::placeholder {
+  font-family: "Courier Prime", monospace;
+  color: #f6f3f3e3;
+  font-size: 1.1rem;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/*==============================
+//        Footer                     
+==============================*/
+svg {
+  margin-bottom: -55px;
+  z-index: 5;
+}
+
+footer {
+  width: 100vw;
+  color: var(--sea-serpent);
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-top: auto;
+  padding: 2rem;
+  background-color: var(--dark-blue);
+  z-index: 6;
+}
+
+footer span {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 20px;
+  font-size: 1.5rem;
+  color: var(--yellow-light);
+}
+
+footer img {
+  width: 90px;
+  height: auto;
+}
