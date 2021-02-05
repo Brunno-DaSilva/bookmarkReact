@@ -2,8 +2,8 @@ class App extends React.Component {
   state = {
     bookmarks: [],
     formData: {
-      title: "",
-      url: "",
+      title: "GitHub Profile",
+      url: "https://github.com/Brunno-DaSilva",
     },
     updateData: {
       title: "",
